@@ -1,0 +1,43 @@
+.road-bg{
+    width: 420px;
+    height: 550px;
+    margin:2rem auto;
+    background-image: url(images/bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+.running-car{
+    width: 140px;
+    height: 120px;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: moving 2s linear infinite;
+    text-align: center;
+}
+@keyframes moving {
+    0%{
+        top: 0px;
+        
+    }
+    100%{
+        
+        top: 551px;
+    }
+}
+.running-car img{
+    height: 100px;
+}
+
+
+.danger-car{
+    width: 140px;
+    height: 120px;
+    position: relative;
+    top: 300px;
+    left: 140px;
+    text-align: center;
+}
+.danger-car img{
+    height: 100px;
+}

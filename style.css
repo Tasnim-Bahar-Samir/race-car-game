@@ -1,18 +1,36 @@
-.road-bg{
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#road-bg{
+    width: 420px;
+    height:550px ;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+}
+#road-bg::after{
+    content: '';
     width: 420px;
     height: 550px;
     margin:2rem auto;
     background-image: url(images/bg.jpg);
     background-size: contain;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: -1;
 }
-.running-car{
+#running-car{
     width: 140px;
     height: 120px;
     position: relative;
     top: 0;
     left: 0;
-    animation: moving 2s linear infinite;
+    animation: moving 1s linear infinite;
     text-align: center;
 }
 @keyframes moving {
@@ -25,12 +43,13 @@
         top: 551px;
     }
 }
-.running-car img{
-    height: 100px;
+#running-car img{
+    height: 110px;
+    
 }
 
 
-.danger-car{
+#danger-car{
     width: 140px;
     height: 120px;
     position: relative;
@@ -38,6 +57,29 @@
     left: 140px;
     text-align: center;
 }
-.danger-car img{
-    height: 100px;
+#danger-car img{
+    
+    height: 110px;
+}
+#result{
+    background-color: rgb(29, 169, 235);
+    color: white;
+    width: 400px;
+    height: 200px;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: .8rem;
+    font-size: 2.2rem;
+    display: none;
+}
+.btn{
+    font-size: 1.3rem;
+    background-color: red;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    
+    margin-top: 1rem;
 }

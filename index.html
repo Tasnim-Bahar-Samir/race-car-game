@@ -8,16 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="road-bg">
-        <div class="running-car">
+    <div id="road-bg">
+        <div id="running-car">
             <img src="images/runnig-car.png" alt="">
         </div>
-        <div class="danger-car">
+        <div id="danger-car">
             <img src="images/danger-car.png" alt="">
         </div>
-        <div class="end-game">
-            
-        </div>
     </div>
+    <div id="result">
+        <h1>Game End</h1>
+        <p class="score">
+            
+        </p>
+        <button class="btn" onclick="location.reload()">Restart</button>
+        
+    </div>
+    <audio src="music/jump2.mp3" id="jump-sound"></audio>
+    <audio src="music/game-end.mp3" id="end-sound"></audio>
+    <script src="script.js"></script>
 </body>
 </html>
